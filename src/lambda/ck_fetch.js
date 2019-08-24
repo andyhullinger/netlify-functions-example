@@ -10,4 +10,5 @@ exports.handler = async (event, context) => {
       body: data.orders
     }))
     .catch(error => ({ statusCode: 422, body: String(error) }));
+    console.log('foo' + data)
 };
